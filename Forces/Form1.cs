@@ -50,6 +50,7 @@ namespace Forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //Read values from text boxes
             double Force = double.Parse(textBox1.Text);
             double Angle = double.Parse(textBox2.Text);
 
