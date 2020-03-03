@@ -50,6 +50,19 @@ namespace Forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //declare variables for force and angles
+            double Force, Angle;
+
+            //Read values from text boxes
+            try
+            {
+                Force = double.Parse(textBox1.Text);
+            }
+            catch
+            {
+
+            }
+                
             //Read values from text boxes
             double Force = double.Parse(textBox1.Text);
             double Angle = double.Parse(textBox2.Text);
