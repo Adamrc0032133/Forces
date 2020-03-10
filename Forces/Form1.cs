@@ -53,19 +53,19 @@ namespace Forces
             //declare variables for force and angles
             double Force, Angle;
 
-            //Read values from text boxes
+            //Read values from text box, parse - make the numbers be read as numbers not individual figures.
             try
             {
                 Force = double.Parse(textBox1.Text);
             }
             catch
             {
-
+                MessageBox.Show("Type a number in the force box");
+                Force = 0.0;
             }
+
+                Angle = double.Parse(textBox2.Text);
                 
-            //Read values from text boxes
-            double Force = double.Parse(textBox1.Text);
-            double Angle = double.Parse(textBox2.Text);
 
             // calculate Fx and Fy 
             double Fx = Force * cos(Angle);
